@@ -4,6 +4,8 @@ from flask import Flask
 
 """import flask"""
 fl = Flask(__name__)
+
+
 @fl.route('/', strict_slashes=False)
 def say_hellow():
     """ new function"""
