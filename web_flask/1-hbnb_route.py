@@ -13,7 +13,7 @@ def say_hellow():
     return "Hello HBNB!"
 
 
-@fl.route('/hbnb',strict_slashes=False)
+@fl.route('/hbnb', strict_slashes=False)
 def hbnb():
     """new tab"""
     return "HBNB"
