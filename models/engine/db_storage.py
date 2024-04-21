@@ -16,7 +16,7 @@ from models.user import User
 from os import getenv
 
 class DBStorage:
-    """ db class """
+    """ db class new"""
     __engine = None
     __session =  None
     def __init__(self):
@@ -30,8 +30,8 @@ class DBStorage:
 
     def all(self, cls=None):
         """ new method """
-        if clc != None:
-            if type(clc) == str:
+        if cls != None:
+            if type(cls) == str:
                 cls = eval(cls)
             dic = self.__session.query(cls)
         else:
@@ -64,6 +64,7 @@ class DBStorage:
         a = scoped_session(s)
         self.__session = a()
 
+
     def close(self):
-        """ new method """
+        """ new method flask"""
         self.__session.remove()
