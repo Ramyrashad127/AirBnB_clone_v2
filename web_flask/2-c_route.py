@@ -23,7 +23,7 @@ def hbnb():
 def c(text):
     """new function"""
     new = unquote(text.replace('_', ' '))
-    return new
+    return "C {}".format(new)
 
 
 if __name__ == '__main__':
