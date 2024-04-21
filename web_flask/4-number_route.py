@@ -37,9 +37,8 @@ def python(text):
 @fl.route('/number/<int:n>', strict_slashes=False)
 def number(n):
     """print a number"""
-    if(isinstance(n,int)):
+    if(isinstance(n, int)):
         return "{} is a number".format(n)
-
 
 
 if __name__ == '__main__':
