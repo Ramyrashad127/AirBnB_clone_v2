@@ -22,7 +22,7 @@ def hbnb():
 @fl.route('/c/<text>', strict_slashes=False)
 def c(text):
     """new function"""
-    new = unquote(text.replace('_',' '))
+    new = unquote(text.replace('_', ' '))
     return new
 
 
