@@ -26,7 +26,7 @@ def c(text):
     return "C {}".format(new)
 
 
-@app.route('/python/', defaults={'text': 'is_cool'}, strict_slashes=False)
+@fl.route('/python/', defaults={'text': 'is_cool'}, strict_slashes=False)
 @fl.route('/python/<text>', strict_slashes=False)
 def python(text):
     """new function"""
