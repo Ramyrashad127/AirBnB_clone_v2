@@ -3,6 +3,7 @@
 
 
 from flask import Flask
+from urllib.parse import unquote
 fl = Flask(__name__)
 
 
@@ -21,7 +22,7 @@ def hbnb():
 @fl.route('/c/<text>', strict_slashes=False)
 def c(text):
     """new function"""
-    new = text.replace('_',' ')
+    new = unquote(text.replace('_',' '))
     return new
 
 
